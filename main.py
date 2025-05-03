@@ -1,11 +1,11 @@
-'''name = (input("Enter name :"))
+"""name = (input("Enter name :"))
 
 age = int(input("Enter age :"))
 
 print(type(name))
 print(type(age))
 
-print(f"My name is {name} and age is {age}")'''
+print(f"My name is {name} and age is {age}")"""
 
 
 # logical Operator
@@ -156,8 +156,109 @@ for i in range(n,0,-1):
 
 
 # 5) Sum up to n terms
-n = int(input("Enter number:-"))
+"""n = int(input("Enter number:- "))
 sum = 0
 for i in range(1,n+1):
     sum = sum + i
-    print(f"sum of number is {sum}")
+    print(sum)"""
+
+# 6) Factorial of a number 
+"""n = int(input("Enter number:-"))
+
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+    print(fact)"""
+
+# 7) - Print the sum of all even & odd numbers in a range separately 
+"""n = int(input("Enter any number :- "))
+even = 0
+odd = 0
+for i in range(1, n+1):
+    if i%2 == 0:
+        even = even + i
+    else:
+        odd = odd + i
+print(f"sum of even {even} and odd {odd}")"""
+
+# 8)  Print all the factors of a number ( factor ka mtlab jo number diya hua hai wo kis kis se complete devide ho raha hai) 
+"""n = int(input("enter number :- "))
+for i in range(1, n+1):
+    if n%i == 0:
+        print(f"factor of all given number is {i}")"""
+
+# 9) Accept a number and check if it a perfect number or not. A number whose sum of factors is equal to the number itself Ex - 6 = 1, 2, 
+
+# perfect number ka mtlab hai aisa number jiska factor ka sum uske diye hue number ke barabar ho khud ka number chor ke (6=1+2+3), (28=1+2+4+7+14)
+
+# pahle hm factor nikalnge..... uske bad hm check krnge ki diye hue number ka factor ka sum ke barabar hai ya nahi khud ka number chor ke
+
+""" n = int(input("Enter any number to check perfect or not :- "))
+
+sum = 0
+for i in range(1, n):
+    if n%i == 0:
+        sum = sum + i
+if sum==n:
+    print("Perfect Number")
+else:
+    print("Not Perfect Number") """
+
+# 10) Check wether the number is prime or not 
+
+# pahle hm kisi bhi number ka factor nikal ke check krenge ki kitna factor hai uska..... uske bad count variable ko zero ke equal rakh ke check krnge ki kitna count aa raha hai given nuber ka .... fir agr count ka vakue 2 hoga to prime number hoga (q ke prime ka 2 hii factor hona caheye) agar nahi hua to prime nahi hai 
+
+"""n = int(input("Enter number to check prime or not :-"))
+count = 0
+for i in range(1, n+1):
+    if n%i == 0:
+        count = count + 1
+if count == 2:
+    print("Its a Prime Number")
+else:
+    print("Not a Prime Number")"""
+
+# 11) Reverse a string without using in build functions.
+
+"""a = "sheryians"
+b = ""
+for i in range(len(a)-1,-1,-1):
+    b = b + a[i]
+print(b)"""
+
+# 12) Check string is Pallindrome or not 
+
+"""n = input("Enter any string  for check palindrome or not :- ")
+j = ""
+
+# print(len(n))
+for i in range(len(n)-1,-1,-1):
+    j = j + n[i]
+if j == n:
+    print("Palindrome")
+else:
+    print("Not palindrome")"""
+
+# 13) Count all letters, digits, and special symbols from a given string
+
+# Given: str1 = "P@#yn26at^&i5ve"
+# Expected Outcome:
+# Total counts of chars, digits, and symbols
+# Chars = 8
+# Digits = 3
+# Symbol = 4
+
+a = "abcdnj1233@#$%"
+char = 0
+dig = 0
+sp = 0
+
+for i in a:
+    if i.isdigit:
+        dig = dig + 1
+    elif i.isalpha:
+        char = char + 1
+    else:
+        sp = sp + 1
+
+print(f"Your digit are {dig}\nyour character are {char}\n your spacial character are {sp} ")
